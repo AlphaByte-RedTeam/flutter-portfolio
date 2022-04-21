@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/example/projects.dart';
 // import 'package:my_portfolio/example/projects.dart';
 import 'package:my_portfolio/responsive.dart';
+import 'package:share_plus/share_plus.dart';
 // import 'package:my_portfolio/widgets/cards/project_card.dart';
 import '../../widgets/cards/project_card.dart';
 import '../../widgets/header/header.dart';
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
           ),
           backgroundColor: Colors.black,
           onPressed: () {
-            print('Button Pressed');
+            Share.share("https://my-portfolio-af5c5.web.app/#/");
           }),
       body: SafeArea(
         child: SizedBox(
